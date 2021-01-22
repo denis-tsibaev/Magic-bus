@@ -1,7 +1,29 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 0, 0.4),
+    rgba(0, 255, 0, 0.4)
+  );
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  padding: 100px 0;
 }
 
 .container {
@@ -9,4 +31,41 @@ ul {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-list a {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list .mobile::before {
+  display: inline-block;
+  content: "";
+  margin-right: 10px;
+  background-image: url(../Natasha-img/smartphone.svg);
+  width: 10px;
+  height: 16px;
+}
+
+.contacts-list .social::before {
+  display: inline-block;
+  content: "";
+  margin-right: 10px;
+  background-image: url(../Natasha-img/instagram.svg);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
+.footer {
+  padding: 100px 0;
 }
