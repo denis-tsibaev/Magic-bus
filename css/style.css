@@ -1,3 +1,15 @@
+@keyframes rotate-box {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    background-color: rgba(197, 181, 38, 0.4);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   background-image: linear-gradient(
     to right,
@@ -14,6 +26,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: brown;
 }
 
 img {
@@ -33,9 +46,29 @@ img {
   margin-right: auto;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px dashed black; */
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+  background-color: rgba(255, 0, 0, 0.4);
+
+  animation-name: rotate-box;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 .contacts-list {
   display: flex;
   align-items: center;
+  margin-right: 30px;
 }
 
 .contacts-list li:not(:last-child) {
@@ -45,6 +78,7 @@ img {
 .contacts-list a {
   display: flex;
   align-items: center;
+  padding: 30px;
 }
 
 .contacts-list .mobile::before {
@@ -56,7 +90,7 @@ img {
   height: 16px;
 }
 
-.contacts-list .social::before {
+.contacts-list .socialnet::before {
   display: inline-block;
   content: "";
   margin-right: 10px;
@@ -64,6 +98,16 @@ img {
   width: 20px;
   height: 20px;
   background-size: contain;
+}
+
+.contacts-list .socialnet:hover,
+.contacts-list .socialnet:focus {
+  color: tomato;
+}
+
+.contacts-list .mobile:hover,
+.contacts-list .mobile:focus {
+  color: tomato;
 }
 
 .footer {
