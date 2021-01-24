@@ -137,6 +137,10 @@ h1 {
   color: tomato;
 }
 
+.about p {
+  max-width: 480px;
+}
+
 .service-list {
   margin-bottom: 30px;
 }
