@@ -35,13 +35,35 @@ img {
   height: auto;
 }
 
+h1 {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .header {
   padding: 100px 0;
+  background-color: rgba(128, 128, 0, 0.5);
 }
 
 .container {
   width: 1200px;
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  background-image: url(../Natasha-img/bg-hero.jpg);
+  max-width: 1200px;
+  height: 630px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,8 +76,8 @@ img {
 }
 
 .box {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin-right: 30px;
   background-color: rgba(255, 0, 0, 0.4);
 
@@ -63,6 +85,11 @@ img {
   animation-duration: 2000ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  /* animation-iteration-count: 2; */
+}
+
+.box:hover {
+  animation-play-state: paused;
 }
 
 .contacts-list {
@@ -110,6 +137,11 @@ img {
   color: tomato;
 }
 
+.service-list {
+  margin-bottom: 30px;
+}
+
 .footer {
   padding: 100px 0;
+  background-color: rgba(128, 128, 0, 0.5);
 }
